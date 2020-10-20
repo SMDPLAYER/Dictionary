@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends Activity implements OnClickListener, OnInitListener {
+
     private static final String ENG_UZB_DICTIONARY = "eng";
     private static final String FLITE_DATA_PATH = Voice.getDataStorageBasePath();
     private static final String UZB_ENG_DICTIONARY = "uzb";
