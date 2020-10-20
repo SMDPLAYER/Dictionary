@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff640000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+
+        <Button
+            android:id="@+id/btnDicOption"
+            android:layout_width="100.0dip"
+            android:layout_height="40.0dip"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/dic_option_bg"
+            android:text="@string/str_eng_uzb"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <ImageButton
+            android:id="@+id/btnLeft"
+            android:layout_width="30.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/arrow_left"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnRight"
+            android:layout_width="30.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/arrow_right"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnErase"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/btnSound"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/listen_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/search_edit_bg"
+        android:gravity="center">
+
+        <AutoCompleteTextView
+            android:id="@+id/edtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:paddingLeft="4.0dip"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/search_icon" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_margin="10.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/texture">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10.0dip">
+
+            <TextView
+                android:id="@+id/tvFirstWord"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="I"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPron"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp" />
+
+            <TextView
+                android:id="@+id/tvSecond"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp" />
+
+            <TextView
+                android:id="@+id/tvTitle_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\nII"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPron_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSecond_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvTitle_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\nIII"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvPron_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvSecond_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:textSize="24.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        ads:adSize="SMART_BANNER"-->
+<!--        ads:adUnitId="@string/banner_home_footer" />-->
+</LinearLayout>
